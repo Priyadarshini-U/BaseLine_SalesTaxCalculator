@@ -2,6 +2,7 @@ package com.tw.shopping;
 
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class GoodFactoryTest {
@@ -39,5 +40,12 @@ public class GoodFactoryTest {
         Good good = new GoodFactory("imported bottle of perfume at 27y.99").ConstructGood();
 
         assertTrue(good == null);
+    }
+
+    @Test
+    public void shouldReturnFoodIfValidFood() {
+        Good good = new GoodFactory("imported bottle of chocolate at 27.99").ConstructGood();
+
+        assertEquals(good.getClass(), Food.class);
     }
 }

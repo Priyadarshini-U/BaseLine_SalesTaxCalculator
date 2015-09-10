@@ -13,11 +13,17 @@ public class GoodFactory {
                 int i = line.lastIndexOf("at");
                 String[] words = {line.substring(0, i - 1), line.substring(i + 2)};
                 double price = Double.parseDouble(words[1]);
-                return new Good(words[0], price);
+                return constructGoodBasedOnType(words[0], price);
             }catch (Exception e){
                 return null;
             }
         }
         return null;
+    }
+
+    private Good constructGoodBasedOnType(String name, double price) {
+        if (name.contains("chocolate"))
+            return new Food(name, price);
+        return new Good(name, price);
     }
 }
