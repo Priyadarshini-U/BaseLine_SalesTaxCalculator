@@ -11,4 +11,10 @@ public class GoodTest {
         Good good = new Good("CD", 30.2);
         assertEquals(good.salesTax(), 30.2/10, 0.0);
     }
+
+    @Test
+    public void shouldHaveZeroImportTaxIfNotImported() {
+        Good good = new Good("CD", 30.2);
+        assertEquals(good.salesTax(), 30.2/10, 0.0);
+    }
 }

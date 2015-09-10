@@ -21,4 +21,8 @@ public class Good {
     public double salesTax() {
         return price/10;
     }
+
+    public double importTax() {
+        return 0.0;
+    }
 }
