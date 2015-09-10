@@ -26,4 +26,11 @@ public class GoodFactoryTest {
 
         assertTrue(good.getName().equals("imported bottle of perfume"));
     }
+
+    @Test
+    public void shouldConstructGoodWithPriceAsNumberAfterAt() {
+        Good good = new GoodFactory("imported bottle of perfume at 27.99").ConstructGood();
+
+        assertTrue(good.getPrice() == 27.99);
+    }
 }
