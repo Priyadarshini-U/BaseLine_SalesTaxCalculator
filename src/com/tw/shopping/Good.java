@@ -31,4 +31,8 @@ public class Good {
     public double getPriceForQuantity(int quantity) {
         return quantity * price;
     }
+
+    public double getTotalPriceForQuantity(int quantity) {
+        return 0.0;
+    }
 }

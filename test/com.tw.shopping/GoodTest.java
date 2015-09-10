@@ -30,4 +30,11 @@ public class GoodTest {
         double price = good.getPriceForQuantity(2);
         assertEquals(price, 60.0, 0.0);
     }
+
+    @Test
+    public void shouldHaveTotalPriceForQuantityAsZeroIfQuantityIsZero() {
+        Good good = new Good("imported CD", 30.0);
+        double price = good.getPriceForQuantity(0);
+        assertEquals(price, 0.0, 0.0);
+    }
 }
