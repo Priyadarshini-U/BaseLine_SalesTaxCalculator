@@ -31,4 +31,10 @@ public class GoodTest {
         Good good = new Good("CD", 3.2);
         assertFalse(good.isBook());
     }
+
+    @Test
+    public void shouldReturnAnyGoodThatHasBookInItsNameAsBook() {
+        Good good = new Good("chocolate book", 3.2);
+        assertTrue(good.isBook());
+    }
 }

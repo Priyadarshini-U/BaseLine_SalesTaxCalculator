@@ -17,6 +17,8 @@ public class Good {
     }
 
     public boolean isBook() {
+        if (name.contains("book"))
+            return true;
         return false;
     }
 }
