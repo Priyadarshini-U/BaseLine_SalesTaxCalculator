@@ -24,6 +24,8 @@ public class GoodFactory {
     private Good constructGoodBasedOnType(String name, double price) {
         if (name.contains("chocolate"))
             return new Food(name, price);
+        if (name.contains("book"))
+            return new Book(name, price);
         return new Good(name, price);
     }
 }
