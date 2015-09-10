@@ -17,7 +17,8 @@ public class ShoppingBasket {
         return itemsPurchased.size();
     }
 
-    public void addToBasket(Good good) {
+    public void addToBasket(Good good,int quantity) {
         itemsPurchased.add(good);
+        this.quantity.add(quantity);
     }
 }

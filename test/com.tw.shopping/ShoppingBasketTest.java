@@ -12,9 +12,9 @@ public class ShoppingBasketTest {
     }
 
     @Test
-    public void shouldAllowGoodsToBeAdded() {
+    public void shouldAllowGoodsToBeAddedWithQuantity() {
         ShoppingBasket basket = new ShoppingBasket();
-        basket.addToBasket(new Good("cr", 90.0));
+        basket.addToBasket(new Good("cr", 90.0),1);
         assertEquals(basket.getNumberOfGoods(), 1);
     }
 }
