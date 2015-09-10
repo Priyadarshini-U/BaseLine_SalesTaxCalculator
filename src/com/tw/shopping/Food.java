@@ -10,18 +10,6 @@ public class Food extends Good{
         this.price = price;
     }
 
-    public boolean isFood() {
-        return true;
-    }
-
-    public boolean isBook() {
-        return false;
-    }
-
-    public boolean isMedicine() {
-        return false;
-    }
-
     public String getName() {
         return name;
     }
