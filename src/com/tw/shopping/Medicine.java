@@ -10,18 +10,6 @@ public class Medicine extends Good{
         this.price = price;
     }
 
-    public boolean isFood() {
-        return false;
-    }
-
-    public boolean isBook() {
-        return false;
-    }
-
-    public boolean isMedicine() {
-        return true;
-    }
-
     public String getName() {
         return name;
     }
