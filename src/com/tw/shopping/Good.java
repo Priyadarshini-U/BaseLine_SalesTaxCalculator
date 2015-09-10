@@ -33,8 +33,8 @@ public class Good {
     }
 
     public double getTotalPriceForQuantity(int quantity) {
-        if(quantity == 0)
+        if (quantity == 0)
             return 0.0;
-        return getPriceForQuantity(1) + (importTax() + salesTax());
+        return getPriceForQuantity(quantity) + quantity * (importTax() + salesTax());
     }
 }
