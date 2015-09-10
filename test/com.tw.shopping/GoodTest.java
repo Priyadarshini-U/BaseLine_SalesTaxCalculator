@@ -26,4 +26,9 @@ public class GoodTest {
         assertTrue(good.isFood());
     }
 
+    @Test
+    public void shouldNotReturnCDAsBook() {
+        Good good = new Good("CD", 3.2);
+        assertFalse(good.isBook());
+    }
 }

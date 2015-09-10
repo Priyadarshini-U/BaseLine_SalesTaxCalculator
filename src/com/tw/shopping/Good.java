@@ -15,4 +15,8 @@ public class Good {
             return true;
         return false;
     }
+
+    public boolean isBook() {
+        return false;
+    }
 }
