@@ -29,4 +29,12 @@ public class ShoppingBasketTest {
         basket.addToBasket(new Good("cr", 90.0), 2);
         assertEquals(basket.sumOfPrice(), 180.0, 0.0);
     }
+
+    @Test
+    public void shouldReturnProductOfQuantityAndPriceForManyGood() {
+        ShoppingBasket basket = new ShoppingBasket();
+        basket.addToBasket(new Good("cr", 90.0), 2);
+        basket.addToBasket(new Good("cr2", 20.0), 1);
+        assertEquals(basket.sumOfPrice(), 200.0, 0.0);
+    }
 }

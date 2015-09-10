@@ -23,8 +23,11 @@ public class ShoppingBasket {
     }
 
     public double sumOfPrice() {
-        if (itemsPurchased.size() == 0)
-            return 0.0;
-        return itemsPurchased.get(0).getPrice() * quantity.get(0);
+        double result = 0.0;
+        if (itemsPurchased.size() != 0)
+            for (int index = 0; index < itemsPurchased.size(); index++) {
+                result += itemsPurchased.get(index).getPrice() * quantity.get(index);
+            }
+        return result;
     }
 }
