@@ -25,4 +25,8 @@ public class Good {
     public boolean isMedicine() {
         return false;
     }
+
+    public String getName() {
+        return name;
+    }
 }
