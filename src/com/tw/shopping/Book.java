@@ -29,4 +29,8 @@ public class Book extends Good{
     public double getPrice() {
         return price;
     }
+
+    public double salesTax() {
+        return 0;
+    }
 }
