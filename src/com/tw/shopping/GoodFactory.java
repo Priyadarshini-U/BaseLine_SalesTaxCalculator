@@ -26,6 +26,8 @@ public class GoodFactory {
             return new Food(name, price);
         if (name.contains("book"))
             return new Book(name, price);
+        if (name.contains("pill"))
+            return new Medicine(name, price);
         return new Good(name, price);
     }
 }

@@ -55,4 +55,11 @@ public class GoodFactoryTest {
 
         assertEquals(good.getClass(), Book.class);
     }
+
+    @Test
+    public void shouldReturnMedicineIfValidMedicine() {
+        Good good = new GoodFactory("imported bottle of pill at 27.99").ConstructGood();
+
+        assertEquals(good.getClass(), Medicine.class);
+    }
 }
