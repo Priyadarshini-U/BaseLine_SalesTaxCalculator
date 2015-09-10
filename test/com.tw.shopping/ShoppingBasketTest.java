@@ -37,4 +37,10 @@ public class ShoppingBasketTest {
         basket.addToBasket(new Good("cr2", 20.0), 1);
         assertEquals(basket.sumOfPrice(), 200.0, 0.0);
     }
+
+    @Test
+    public void shouldHaveTotalPriceAsZeroForNoGood() {
+        ShoppingBasket basket = new ShoppingBasket();
+        assertEquals(basket.sumOfPrice(), 0.0, 0.0);
+    }
 }

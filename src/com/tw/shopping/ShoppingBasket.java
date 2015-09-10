@@ -31,4 +31,9 @@ public class ShoppingBasket {
             }
         return result;
     }
+
+    public double totalPrice() {
+        double result = 0.0;
+        return result;
+    }
 }
