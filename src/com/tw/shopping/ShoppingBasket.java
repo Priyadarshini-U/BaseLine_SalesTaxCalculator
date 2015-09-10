@@ -1,5 +1,6 @@
 package com.tw.shopping;
 
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,5 +15,9 @@ public class ShoppingBasket {
 
     public int getNumberOfGoods() {
         return itemsPurchased.size();
+    }
+
+    public void addToBasket(Good good) {
+        itemsPurchased.add(good);
     }
 }
