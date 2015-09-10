@@ -10,7 +10,7 @@ public class Good {
         this.price = price;
     }
 
-        public boolean isFood() {
+    public boolean isFood() {
         if (name.contains("chocolate"))
             return true;
         return false;
@@ -32,5 +32,9 @@ public class Good {
 
     public double getPrice() {
         return price;
+    }
+
+    public double salesTax() {
+        return price/10;
     }
 }
