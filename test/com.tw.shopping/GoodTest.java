@@ -20,4 +20,10 @@ public class GoodTest {
         assertTrue(good.isFood());
     }
 
+    @Test
+    public void shouldReturnAnyGoodThatHasChocolateInItsNameAsFood() {
+        Good good = new Good("chocolate bar", 3.2);
+        assertTrue(good.isFood());
+    }
+
 }

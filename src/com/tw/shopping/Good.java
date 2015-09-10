@@ -11,7 +11,7 @@ public class Good {
     }
 
     public boolean isFood() {
-        if (name.equals("chocolate"))
+        if (name.contains("chocolate"))
             return true;
         return false;
     }
