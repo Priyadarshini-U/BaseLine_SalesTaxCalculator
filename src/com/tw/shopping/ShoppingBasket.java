@@ -21,4 +21,8 @@ public class ShoppingBasket {
         itemsPurchased.add(good);
         this.quantity.add(quantity);
     }
+
+    public double sumOfPrice() {
+        return 0.0;
+    }
 }
