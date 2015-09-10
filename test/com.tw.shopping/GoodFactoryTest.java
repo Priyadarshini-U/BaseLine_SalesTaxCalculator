@@ -13,4 +13,11 @@ public class GoodFactoryTest {
 
         assertTrue(good == null);
     }
+
+    @Test
+    public void shouldReturnNoGoodForEmptyLine() {
+        Good good = new GoodFactory(null).ConstructGood();
+
+        assertTrue(good == null);
+    }
 }
