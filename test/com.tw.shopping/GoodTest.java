@@ -23,4 +23,11 @@ public class GoodTest {
         Good good = new Good("imported CD", 30.2);
         assertEquals(good.importTax(), 30.2/20, 0.0);
     }
+
+    @Test
+    public void shouldHavePriceForQuantityAsProductOfPriceAndQuantity() {
+        Good good = new Good("imported CD", 30.0);
+        double price = good.getPriceForQuantity(2);
+        assertEquals(price, 60.0, 0.0);
+    }
 }

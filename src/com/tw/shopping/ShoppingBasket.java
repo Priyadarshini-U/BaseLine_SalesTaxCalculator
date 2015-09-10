@@ -26,7 +26,8 @@ public class ShoppingBasket {
         double result = 0.0;
         if (itemsPurchased.size() != 0)
             for (int index = 0; index < itemsPurchased.size(); index++) {
-                result += itemsPurchased.get(index).getPrice() * quantity.get(index);
+                Good good = itemsPurchased.get(index);
+                result += good.getPriceForQuantity(quantity.get(index));
             }
         return result;
     }
