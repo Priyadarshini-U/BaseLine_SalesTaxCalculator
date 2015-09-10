@@ -33,4 +33,11 @@ public class GoodFactoryTest {
 
         assertTrue(good.getPrice() == 27.99);
     }
+
+    @Test
+    public void shouldNotGoodIfInputInvalid() {
+        Good good = new GoodFactory("imported bottle of perfume at 27y.99").ConstructGood();
+
+        assertTrue(good == null);
+    }
 }
