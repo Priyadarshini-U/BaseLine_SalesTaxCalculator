@@ -19,10 +19,12 @@ public class Good {
     }
 
     public double salesTax() {
-        return price/10;
+        return price / 10;
     }
 
     public double importTax() {
+        if (name.contains("imported"))
+            return price / 20.0;
         return 0.0;
     }
 }
