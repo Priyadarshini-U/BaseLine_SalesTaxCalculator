@@ -21,4 +21,8 @@ public class Good {
             return true;
         return false;
     }
+
+    public boolean isMedicine() {
+        return false;
+    }
 }
