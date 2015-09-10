@@ -22,4 +22,11 @@ public class ShoppingBasketTest {
     public void shouldHaveSumOfPriceOfEmptyBasketAsZero() {
         assertEquals(new ShoppingBasket().sumOfPrice(), 0.0, 0.0);
     }
+
+    @Test
+    public void shouldReturnProductOfQuantityAndPriceForOneGood() {
+        ShoppingBasket basket = new ShoppingBasket();
+        basket.addToBasket(new Good("cr", 90.0), 2);
+        assertEquals(basket.sumOfPrice(), 180.0, 0.0);
+    }
 }

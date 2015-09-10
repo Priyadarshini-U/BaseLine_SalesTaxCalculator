@@ -17,12 +17,14 @@ public class ShoppingBasket {
         return itemsPurchased.size();
     }
 
-    public void addToBasket(Good good,int quantity) {
+    public void addToBasket(Good good, int quantity) {
         itemsPurchased.add(good);
         this.quantity.add(quantity);
     }
 
     public double sumOfPrice() {
-        return 0.0;
+        if (itemsPurchased.size() == 0)
+            return 0.0;
+        return itemsPurchased.get(0).getPrice() * quantity.get(0);
     }
 }
